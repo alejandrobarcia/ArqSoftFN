@@ -8,6 +8,6 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-public abstract class ResolucionEcuaciones extends Resolucion{
-    protected abstract Solucion resolverSistema();
+public abstract class EquationsSysSolver extends SystemSolver{
+    protected abstract Solution resolverSistema();
 }

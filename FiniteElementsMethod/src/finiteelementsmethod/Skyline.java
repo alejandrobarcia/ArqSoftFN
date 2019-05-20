@@ -8,8 +8,8 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-public class MatrizCompleta extends Matriz{
-    public MatrizCompleta(){
-        System.out.println("Se ha creado una matriz completa");
+public class Skyline extends Matrix{
+    public Skyline(){
+        System.out.println("Se ha creado una matriz skyline");
     }
 }

@@ -8,14 +8,14 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-public class SistemaEcuaciones extends Sistema{
-    private MiVector vector;
-    public SistemaEcuaciones(Matriz matriz, MiVector vector){
+public class EquationsSystem extends FEMSystem{
+    private MyVector vector;
+    public EquationsSystem(Matrix matriz, MyVector vector){
         super(matriz);
         this.vector = vector;
     }
     
-    public MiVector getVector(){
+    public MyVector getVector(){
         return this.vector;
     }
 }

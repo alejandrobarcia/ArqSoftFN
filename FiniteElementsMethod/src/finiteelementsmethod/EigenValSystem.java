@@ -8,6 +8,8 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-public abstract class Matriz {
-    
+public class EigenValSystem extends FEMSystem{
+    public EigenValSystem(Matrix matriz){
+        super(matriz);
+    }
 }

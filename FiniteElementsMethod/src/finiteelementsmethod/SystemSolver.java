@@ -8,7 +8,7 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-public abstract class Resolucion {
-    protected Solucion solucion;
-    protected abstract Solucion resolverSistema();
+public abstract class SystemSolver {
+    protected Solution solucion;
+    protected abstract Solution resolverSistema();
 }

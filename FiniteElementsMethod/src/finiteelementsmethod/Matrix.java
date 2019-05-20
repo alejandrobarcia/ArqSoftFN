@@ -8,8 +8,6 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-public class MatrizDiagonales extends Matriz{
-    public MatrizDiagonales(){
-        System.out.println("Se ha creado una matriz diagonal");
-    }
+public abstract class Matrix {
+    
 }

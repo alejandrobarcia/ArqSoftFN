@@ -8,8 +8,8 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-public class MiVector {
-    public MiVector(){
+public class MyVector {
+    public MyVector(){
         System.out.println("Se ha creado el vector");
     }
 }

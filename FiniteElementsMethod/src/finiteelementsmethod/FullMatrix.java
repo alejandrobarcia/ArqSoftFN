@@ -8,8 +8,8 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-public class SistemaAutoValores extends Sistema{
-    public SistemaAutoValores(Matriz matriz){
-        super(matriz);
+public class FullMatrix extends Matrix{
+    public FullMatrix(){
+        System.out.println("Se ha creado una matriz completa");
     }
 }

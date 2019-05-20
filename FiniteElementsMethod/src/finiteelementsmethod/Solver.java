@@ -4,7 +4,7 @@
  */
 package finiteelementsmethod;
 
-import Fabricas.FabricaProdsMEF;
+import Factories.SystemFactory;
 import java.util.List;
 
 /**
@@ -12,17 +12,17 @@ import java.util.List;
  * @author luis.alberto.moruno
  */
 public class Solver {
-    private Resolucion resolucion;
-    private Solucion solucion;
+    private SystemSolver resolucion;
+    private Solution solucion;
     private List elementos;
-    private FabricaProdsMEF fabrica;
+    private SystemFactory fabrica;
     public Solver(List elementos){
         this.elementos=elementos;
     }
     public void ensamblarElementos() {
         System.out.println("Se ha ensamblado la totalidad de las contribuciones de los elementos al sistema");
     }
-    public Solucion getSolucion(){
+    public Solution getSolucion(){
         return this.solucion;
     }
     public void resolver(String tM, String tR){
@@ -31,7 +31,7 @@ public class Solver {
         this.ensamblarElementos();
         this.solucion=this.resolucion.resolverSistema();
     }
-    public void setFabrica(FabricaProdsMEF f){
+    public void setFabrica(SystemFactory f){
         fabrica=f;
     }
 }

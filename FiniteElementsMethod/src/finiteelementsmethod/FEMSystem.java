@@ -8,12 +8,12 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-public abstract class Sistema {
-    private Matriz matriz;
-    public Sistema(Matriz matriz){
+public abstract class FEMSystem {
+    private Matrix matriz;
+    public FEMSystem(Matrix matriz){
         this.matriz=matriz;
     }
-    public Matriz getMatriz(){
+    public Matrix getMatriz(){
         return this.matriz;
     }
 }

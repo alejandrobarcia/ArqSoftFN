@@ -8,8 +8,8 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-public class MatrizSkyline extends Matriz{
-    public MatrizSkyline(){
-        System.out.println("Se ha creado una matriz skyline");
+public class DiagonalsMatrix extends Matrix{
+    public DiagonalsMatrix(){
+        System.out.println("Se ha creado una matriz diagonal");
     }
 }

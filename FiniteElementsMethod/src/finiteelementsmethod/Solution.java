@@ -8,8 +8,8 @@ package finiteelementsmethod;
  *
  * @author luis.alberto.moruno
  */
-class Solucion {
-    public Solucion(){
+class Solution {
+    public Solution(){
         System.out.println("La solucion ha sido calculada");
     }
 }

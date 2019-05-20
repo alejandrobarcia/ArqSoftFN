@@ -4,7 +4,7 @@
  */
 package finiteelementsmethod;
 
-import Fabricas.FabricaProdsSistemaAutovalores;
+import Factories.EigenValuesFactory;
 import java.util.List;
 
 /**
@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class FiniteElementsMethod {
     private static List ld;
-    private static Solucion sol;
+    private static Solution sol;
     
     public void discretizar(){
         System.out.println("Discretizando region estudiada...");
@@ -24,7 +24,7 @@ public class FiniteElementsMethod {
     public void postProcesar(){
          System.out.println("Postprocesando solucion calculada...");
     }
-    public Solucion getSolucion(){
+    public Solution getSolucion(){
         return this.sol;
     }
     public static void main(String[] args){
@@ -32,7 +32,7 @@ public class FiniteElementsMethod {
         fem.discretizar();
         fem.renumerarNodos();
         Solver solver=new Solver(ld);
-        solver.setFabrica(new FabricaProdsSistemaAutovalores());
+        solver.setFabrica(new EigenValuesFactory());
         solver.resolver("skyline", "Auto1");
         fem.postProcesar();
     }
